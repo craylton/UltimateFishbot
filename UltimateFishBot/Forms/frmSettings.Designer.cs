@@ -137,6 +137,7 @@ namespace UltimateFishBot.Forms
             this.btnReset = new System.Windows.Forms.Button();
             this.chkTxt2speech = new System.Windows.Forms.CheckBox();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.chkVanilla = new System.Windows.Forms.CheckBox();
             this.dash1 = new System.Windows.Forms.Label();
             this.dash0 = new System.Windows.Forms.Label();
             this.txtScanStepsHigh = new System.Windows.Forms.TextBox();
@@ -1242,6 +1243,7 @@ namespace UltimateFishBot.Forms
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.btnReset);
+            this.tabPage7.Controls.Add(this.chkVanilla);
             this.tabPage7.Controls.Add(this.chkTxt2speech);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
@@ -1281,6 +1283,16 @@ namespace UltimateFishBot.Forms
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // chkVanilla
+            // 
+            this.chkVanilla.AutoSize = true;
+            this.chkVanilla.Location = new System.Drawing.Point(8, 40);
+            this.chkVanilla.Name = "chkVanilla";
+            this.chkVanilla.Size = new System.Drawing.Size(232, 17);
+            this.chkVanilla.TabIndex = 18;
+            this.chkVanilla.Text = "Vanilla WoW (uses a different cursor image)";
+            this.chkVanilla.UseVisualStyleBackColor = true;
             // 
             // dash1
             // 
@@ -1481,5 +1493,6 @@ namespace UltimateFishBot.Forms
         internal System.Windows.Forms.TextBox txtScanStepsHigh;
         private System.Windows.Forms.Label dash4;
         private System.Windows.Forms.Label dash3;
+        private System.Windows.Forms.CheckBox chkVanilla;
     }
 }

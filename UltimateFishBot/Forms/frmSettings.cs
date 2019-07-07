@@ -221,10 +221,11 @@ namespace UltimateFishBot.Forms
             cmbMovements.SelectedIndex = Properties.Settings.Default.AntiAfkMoves;
 
             /// Languages
-            chkTxt2speech.Checked = Properties.Settings.Default.Txt2speech;
             LoadLanguages();
 
-
+            // Other
+            chkTxt2speech.Checked = Properties.Settings.Default.Txt2speech;
+            chkVanilla.Checked = Properties.Settings.Default.VanillaMode;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -307,7 +308,6 @@ namespace UltimateFishBot.Forms
             Properties.Settings.Default.AntiAfkMoves = cmbMovements.SelectedIndex;
 
             /// Language
-            Properties.Settings.Default.Txt2speech = chkTxt2speech.Checked;
             if ((string)cmbLanguage.SelectedItem != Properties.Settings.Default.Language)
             {
                 Properties.Settings.Default.Language = (string)cmbLanguage.SelectedItem;
@@ -325,6 +325,9 @@ namespace UltimateFishBot.Forms
                 this.Close();
             }
 
+            // Other
+            Properties.Settings.Default.Txt2speech = chkTxt2speech.Checked;
+            Properties.Settings.Default.VanillaMode = chkVanilla.Checked;
         }
 
         private void tabSettings_SelectedIndexChanged(Object sender, EventArgs e)

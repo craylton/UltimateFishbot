@@ -213,6 +213,7 @@
     <Content Include="Resources\Magyar.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\vanillaFishIcon35x35.bmp" />
     <Content Include="Resources\Български.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
