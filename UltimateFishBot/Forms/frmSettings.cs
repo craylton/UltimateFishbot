@@ -307,6 +307,10 @@ namespace UltimateFishBot.Forms
             Properties.Settings.Default.AntiAfkTime = int.Parse(txtAntiAfkTimer.Text);
             Properties.Settings.Default.AntiAfkMoves = cmbMovements.SelectedIndex;
 
+            // Other
+            Properties.Settings.Default.Txt2speech = chkTxt2speech.Checked;
+            Properties.Settings.Default.VanillaMode = chkVanilla.Checked;
+
             /// Language
             if ((string)cmbLanguage.SelectedItem != Properties.Settings.Default.Language)
             {
@@ -324,10 +328,6 @@ namespace UltimateFishBot.Forms
                 Properties.Settings.Default.Save();
                 this.Close();
             }
-
-            // Other
-            Properties.Settings.Default.Txt2speech = chkTxt2speech.Checked;
-            Properties.Settings.Default.VanillaMode = chkVanilla.Checked;
         }
 
         private void tabSettings_SelectedIndexChanged(Object sender, EventArgs e)
